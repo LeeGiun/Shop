@@ -39,8 +39,7 @@ function App() {
       <Routes>
         <Route path='/shop' element = {
           <Container>
-            <img src='https://leegiun.github.io/Shop/images/visual.jpg' alt='vm1'/>
-            <img src={process.env.PUBLIC_URL+'https://leegiun.github.io/Shop/images/visual.jpg'} alt='vm2'/>
+            <img src={process.env.PUBLIC_URL+'/images/visual.jpg'} alt='vm'/>
             <h2>Product</h2>
             <Row>
               {
