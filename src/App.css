@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  color: #000 !important;
+}
+li {list-style: none;}
+
+button {
+  width: 100px;
+  height: 40px;
+  font-size: 12px;
+}
+.App {
+  text-align: center;
+}
+
+.navbar-dark, .navbar[data-bs-theme=dark] {
+  background-color: #fff;
+}
+.nav-link {
+  color: #fff !important;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 28px !important;
+  margin-bottom: 4px;
+}
+.container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 0px;
+}
+.row {
+  display: block;
+}
+.col {
+  width: 25% !important;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  float: left;
+  transition: 0.3s;
+}
+.col:hover {
+  border: 1px solid #777;
+  box-sizing: border-box;
+}
+.col p {
+  font-size: 13px;
+  color: #777 !important;
+}
+.col p:nth-child(4) {
+  font-weight: bold;
+  font-size: 18px;
+  color: #000 !important;
+}
+.col h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #444 !important;
+  margin-top: 20px;
+}
+.col button {
+  width: 43%;
+  height: 40px;
+  border-radius: 15px;
+  border: 1px solid #000;
+  background-color: #fff;
+  transition: 0.3s;
+  margin-right: 3%;
+  margin-bottom: 25px;
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+}
+.col button:nth-child(2) {
+  float: right;
+  margin-right: 8%;
+}
+.col button:hover {
+  background-color: #000;
+  color: #fff !important;
+  border: 1px solid #fff;
+}

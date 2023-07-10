@@ -1,4 +1,3 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import itemDatas from './myPages/MainPage_DataList'
 import Detail from './myPages/Detail'
@@ -12,6 +11,7 @@ import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { addItem } from './myPages/store'
+import './App.css';
 
 
 function App() {
@@ -47,11 +47,12 @@ function App() {
                   return (
                     <Col key = {index}>
                       <Link to={`detail/${index}`}>
-                        <img src={itemData.image} alt='product_img' style={{width: 280}}/>
+                        <img src={itemData.image} alt='product_img'/>
                         <h2>{itemData.ProductName}</h2>
                         <p>{itemData.desc}</p>
                         <p>{itemData.price}</p>
                       </Link>
+                      <button>찜하기</button>
                       <button onClick={() => {dispatch(addItem({id: itemData.id, ProductName: itemData.ProductName, count: 1}))}}>장바구니</button>
                     </Col>
                   )
