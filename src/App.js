@@ -39,7 +39,7 @@ function App() {
       <Routes>
         <Route path='/shop' element = {
           <Container>
-            <img src={process.env.PUBLIC_URL + './images/visual.jpg'} alt='vm'/>
+            <img src={process.env.PUBLIC_URL+'/images/visual.jpg'} alt='vm'/>
             <h2>Product</h2>
             <Row>
               {
